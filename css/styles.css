@@ -125,6 +125,8 @@ letter-spacing: 0.02em;
     color: var(--text-light-theme-color);
     font-family: Roboto;
     font-style: normal;
+    display: flex;
+    align-items: center;
 }
 
 .menu-link::after {
@@ -142,6 +144,30 @@ letter-spacing: 0.02em;
 .contacts-link:hover,
 .contacts-link:focus {
     color: var(--accent-color);
+}
+
+.contacts-link {
+    fill: var(--text-light-theme-color);
+}
+
+.contacts-link-svg {
+    display: block;
+    margin-right: 10px;
+}
+
+.svg-mail {
+    width: 16px;
+    height: 12px;
+}
+
+.svg-tel {
+    width: 10px;
+    height: 15px; 
+}
+
+.contacts-link:hover .contacts-link-svg,
+.contacts-link:focus .contacts-link-svg {
+    fill: var(--accent-color);
 }
 
 .hero {
@@ -301,6 +327,10 @@ text-transform: uppercase;
     padding-bottom: 94px;
 }
 
+.our-team-img {
+    margin-bottom: 30px;
+}
+
 .our-team {
     margin-top: 0;
     margin-bottom: 50px;
@@ -410,11 +440,48 @@ text-transform: uppercase;
     align-items: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
+    fill: #AFB1B8;
+}
+
+.clients-list-link-svg-one{
+    width: 45px;
+    height: 50px;
+}
+
+.clients-list-link-svg-two {
+    width: 40px;
+    height: 52px;
+}
+
+.clients-list-link-svg-three {
+    width: 41px;
+    height: 43px;
+}
+
+.clients-list-link-svg-four {
+    width: 80px;
+    height: 43px;
+   
+}
+
+.clients-list-link-svg-five {
+    width: 59px;
+    height: 47px;
+}
+
+.clients-list-link-svg-six {
+    width: 89px;
+    height: 46px;
 }
 
 .clients-list-link:hover,
 .clients-list-link:focus {
     border: 1px solid #2196F3;
+}
+
+.clients-list-link:hover .clients-list-link-svg,
+.clients-list-link:focus .clients-list-link-svg {
+    fill: var(--accent-color);
 }
 
 .social-link-one {
@@ -458,9 +525,25 @@ text-transform: uppercase;
     background-color: var(--accent-color);
 }
 
-.svg {
+.social-links-svg {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    fill: #AFB1B8;
+}
+
+.social-link-svg {
     width: 20px;
     height: 20px;
+}
+
+.social-links-svg:hover,
+.social-links-svg:focus {
+    background-color: var(--accent-color);
+    fill: #FFFFFF;
 }
 
 footer {
@@ -468,6 +551,7 @@ footer {
 }
 
 .address-section {
+    padding-top: 60px;
     margin-right: 69px;
 }
 
@@ -483,7 +567,6 @@ footer {
 
 .footer-container {
     display: flex;
-    padding-top: 60px;
     padding-bottom: 60px;
 }
 
@@ -492,6 +575,11 @@ footer {
     margin-bottom: 0;
     padding-left: 0;
     display: flex;
+}
+
+.join-in-section {
+    margin-right: 94px;
+    padding-top: 72px;
 }
 
 .join-in {
@@ -543,6 +631,43 @@ font-style: normal;
 .mail-item,
 .tel-item {
     color: var(--text-dark-theme-color);
+}
+
+.follow-us-button {
+font-family: Roboto;
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+line-height: 1.87;
+
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.06em;
+
+position: absolute;
+width: 200px;
+height: 50px;
+
+color: #FFFFFF;
+background-color: var(--accent-color);
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+border: 1px solid transparent;
+border-radius: 4px;
+justify-content: center;
+margin-top: 108px;
+}
+
+.follow-us-button::after {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-image: url(../images/social-links/telegram.svg)
+}
+
+.follow-us-title {
+    margin-right: 10px;
 }
 
 .filters-div {
